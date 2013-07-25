@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>StaticGrass Creations Home</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<script language="JavaScript">
+		var frmvalidator  = new Validator("contactform");
+		frmvalidator.addValidation("name","req","Please provide your name");
+		frmvalidator.addValidation("email","req","Please provide your email");
+		frmvalidator.addValidation("email","email",
+  		"Please enter a valid email address");
+	</script>
+
+</head>
+
+<body>
+	<?php
+if (isset($_REQUEST['email']))
+//if "email" is filled out, send email
+  {
+  //send email
+  $email = $_REQUEST['email'] ;
+  $name = $_REQUEST['name'] ;
+  $links = $_REQUEST['links']
+  $message = $_REQUEST['message'] ;
+  mail("jbsgcreate@gmail.com", $subject,
+  $message, "From:" . $email);
+  echo "Thank you for using our mail form";
+  }
+?>
+	<header>
+		<div class="StaticGrass">
+			<p>StaticGrass</p>
+			<div class="line">
+			</div>
+			<p>Creations</p>
+		</div>
+		<div class="slogan">
+			<h1>The Portfolio for a</h1>
+			<h2>miniature model painting</h2>
+			<h3>company</h3>
+		</div>
+		<div class="logo">
+			<img src="images/newlogo.png" />
+		</div>
+	</header>
+	
+	<nav>
+		<ul id="bigNav">
+			<div id="leftNav">
+				<li><a class="home" href="index.html">HOME</a></li>
+				<li><a class="about" href="about.html">ABOUT ME</a></li>
+				<li><a class="blog" href="blog.html">HOBBY BLOG</a></li>
+			</div>
+			<div id="rightNav">
+				<li><a class="gallery" href="gallery.html">GALLERY</a></li>
+				<li><a class="commission" href="commission.html">COMMISSION ME</a></li>
+				<li><a class="contact" href="contact.html">CONTACT ME</a></li>
+			</div>
+		</ul>
+	</nav>
+
+	<div class="contactActive">
+		<img id="fit" src="images/squiggly.png" />
+	</div>
+
+	<div class="middlePortfolio">
+		<img src="images/middlePortfolio.png">
+	</div>
+	
+	<div class="pageHeader">
+		<h1>~It will help if you just sing along~</h1>
+	</div>
+	
+	<div class="contactForm">
+		<div class="instructions">
+			<p>Please leave as much detail as possible for the most accurate quote. Questions are always welcome.</p>
+		</div>
+		<form>
+			<label>Name</label>
+			<input name="name">
+			<label>Email</label>
+			<input name="email" type="email">
+			<label>Helpful Links</label>
+			<input name="links" placeholder="pictures of the models, inspiration, etc.">
+			<label>Message</label>
+			<textarea name="message" placeholder="Details please!"></textarea>
+			<input id="submit" name="submit" type="submit" value="Submit">
+		</form>
+	</div>
+
+	<footer>
+		<p><h3>A portfolio designed and coded by myself, Jason Bergunder.</h3></p>
+	</footer>
+</body>
+
+</html>
