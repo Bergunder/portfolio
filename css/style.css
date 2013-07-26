@@ -130,6 +130,54 @@ input {
     -webkit-border-radius:5px;
 }
 
+/*================GALLERY==================*/
+
+/*--Main Container--*/
+.main_view {
+ float: left;
+ position: relative;
+}
+/*--Window/Masking Styles--*/
+.window {
+ height:286px; width: 790px;
+ overflow: hidden; /*--Hides anything outside of the set width/height--*/
+ position: relative;
+}
+.image_reel {
+ position: absolute;
+ top: 0; left: 0;
+}
+.image_reel img {float: left;}
+ 
+/*--Paging Styles--*/
+.paging {
+ position: absolute;
+ bottom: 40px; right: -7px;
+ width: 178px; height:47px;
+ z-index: 100; /*--Assures the paging stays on the top layer--*/
+ text-align: center;
+ line-height: 40px;
+ background: url(paging_bg2.png) no-repeat;
+ display: none; /*--Hidden by default, will be later shown with jQuery--*/
+}
+.paging a {
+ padding: 5px;
+ text-decoration: none;
+ color: #fff;
+}
+.paging a.active {
+ font-weight: bold;
+ background: #920000;
+ border: 1px solid #610000;
+ -moz-border-radius: 3px;
+ -khtml-border-radius: 3px;
+ -webkit-border-radius: 3px;
+}
+.paging a:hover {font-weight: bold;}
+
+
+/*==============GALLERY===============*/
+
 a:link {
 	text-decoration: none;
 	color: #E6E6E6;
@@ -236,14 +284,46 @@ a:hover {
 	top: -50px;
 }
 
+.pageHeader3 {
+	position: relative;
+	text-align: center;
+	border-width: medium;
+	border-color: #CCCCCC;
+	border-style: solid;
+	width: 800px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-right: none;
+	border-left: none;
+	display: inline-block;
+	left: 200px;
+	top: 30px;
+}
+
+.pageHeader4 {
+	position: relative;
+	text-align: center;
+	border-width: medium;
+	border-color: #CCCCCC;
+	border-style: solid;
+	width: 800px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-right: none;
+	border-left: none;
+	display: inline-block;
+	left: 200px;
+	top: 50px;
+}
+
 .navTopShade {
 	background-color: #000;
 }
 
 .slideshow {
 	position: relative;
-	left: 200px;
-	height: 900px;
+	left: 350px;
+	height: 700px;
 	width: 800px;
 	top: 50px;
 	display: inline-block;
@@ -389,12 +469,38 @@ a:hover {
 
 .commissionRates {
 	position: relative;
+	top: 40px;
 	left: 180px;
 	padding: 20px;
 	width: 800px;
-	height: 800px;
 }
 
 .infogallerylink {
 	background-color: #2B2B2B;
+}
+
+.standard {
+	border-width: medium;
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	margin-top: 50px;
+	padding-top: 20px;
+}
+
+.terms {
+	position: relative;
+	top: 40px;
+	left: 180px;
+	padding: 20px;
+	width: 800px;
+	height: 1000px;
+}
+
+.blogpiclink {
+	position: relative;
+	left: 140px;
+	padding: 100px;
 }
