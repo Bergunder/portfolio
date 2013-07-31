@@ -5,6 +5,10 @@
 	<title>StaticGrass Creations Home</title>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link href="css/lightbox.css" rel="stylesheet" />
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
 </head>
 
 <body>
@@ -50,66 +54,78 @@
 	
 	<div class="pageHeader">
 		<h1>From past commissions, to my own work: the Gallery.</h1>
-		<h2>Click on an image to go into the album/page.</h2>
+		<h2>Click on an image to enlarge.</h2>
 	</div>
 	
 	<div class="commissionSet">
 		<p><h3>Past Commissions</h3></p>
 		<p>This is a list of previous commissions for model painting and assembly that clients have contacted me for.</p>
-		<img id="bigOne" src="http://placehold.it/300x300" />
 		<div class="others">
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
+			<ul id="gallery">
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1780011_zps2e8e622c.jpg" data-lightbox="commission-1" title="Kaldor Drago with Grey Knights squad"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/bc66da3e-de67-4171-844f-f8c3abcbfc44_zps98ee9137.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1780010_zpsf6a4b998.jpg" data-lightbox="commission-1" title="Kaldor Drago Flag"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/d8a5955d-08d5-43b1-bd51-7593e6f79e52_zps6e667f0e.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1780009_zps69b2c525.jpg" data-lightbox="commission-1" title="Kaldor Drago shield"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/a2a99c61-1c13-45fb-964c-7e97cc2cad43_zpsf696d745.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1780008_zpsb2859be1.jpg" data-lightbox="commission-1" title="Cape freehand"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/ea442639-0b6f-41eb-857d-370c110e5fcc_zps6bc250d6.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1780006_zps16548137.jpg" data-lightbox="commission-1" title="blended mirror effect"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/6e5bcf95-be7b-4eef-9ce9-7fa0c0965080_zps55fd6baa.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1780003_zpsc78c042b.jpg" data-lightbox="commission-1" title="Kaldor Drago rear"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/1e3c556a-2c19-4ccd-a1d4-c8436dfd4151_zps6d5a4e6d.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1780002_zpsf1ffbe83.jpg" data-lightbox="commission-1" title="Kaldor Drago front"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/a644676c-8275-4a1c-a7f3-e1445a1efcab_zps72ed78ff.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1760008_zps8c56eff4.jpg" data-lightbox="commission-1" title="Grey Knight"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/69e9ee28-a9e2-4f01-8362-b3fde2d4457c_zpsdd1262b5.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1760006_zpsd0a918d0.jpg" data-lightbox="commission-1" title="Grey Knight"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/2cb82ab7-0d4a-4434-a205-83b66176f298_zpsba55e73d.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1760004_zpsaaebe8bc.jpg" data-lightbox="commission-1" title="Grey Knight"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/cf9aface-4909-41dd-a31b-f079ffbeb81b_zps2ef6bcf9.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1760002_zpsf0e817fa.jpg" data-lightbox="commission-1" title="Grey Knight with psilencer"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/be748ca0-d8f0-466a-a278-e803d612a00a_zpsd9e06355.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1750003_zpseff5d0ec.jpg" data-lightbox="commission-1" title="Grey Knight"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/e5cb5981-5b04-43a4-8555-48ea831d55cc_zpse00ced6f.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1760001_zpsde514273.jpg" data-lightbox="commission-1" title="Grey Knight squad"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/908f1e03-8eec-4e8d-81c0-c15033e9832d_zps45af1ea2.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P6020141_zpsc4f407a6.jpg" data-lightbox="commission-1" title="Ork Nob biker with power klaw"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/0e123f4e-f6c5-4b32-85d5-3c884d0e13f8_zpsd762102a.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P6020139_zps5a66e8f4.jpg" data-lightbox="commission-1" title="Ork biker with 'uge choppa"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/4bae6afa-dcce-4a65-ada3-6ec2447d69b5_zpse00d6b1a.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P6020131_zps44ff1a49.jpg" data-lightbox="commission-1" title="Ork biker"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/b7c73055-3e25-4738-82cf-a2575f2f62a6_zps9c0b6661.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P2170128_zps607912d1.jpg" data-lightbox="commission-1" title="Imotekh the Stormlord"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/56baee5e-0710-43a1-90ae-befd8a40c2cd_zpsfe5b0999.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P2100127_zpsc3b332b9.jpg" data-lightbox="commission-1" title="Necron Command Barge"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/7a6744a3-4b80-4341-94c3-26777934a04d_zps0139ce0f.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P1100127_zpsa5edf5b0.jpg" data-lightbox="commission-1" title="Necron Deathmark"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/1a614804-95fd-4c92-a84c-6bb22c120654_zps6057485f.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P1150518_zps153f9414.jpg" data-lightbox="commission-1" title="Tau Manta overview"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/0761e14c-747c-464d-8ef6-b1b3885ca001_zpsfb3b6770.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P1150514-1_zps852f85a6.jpg" data-lightbox="commission-1" title="Tau Manta dragon nebula freehand"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/a86f714d-465b-4d2d-914a-1f817e229f85_zps63825170.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/P1150513-1_zps8957d29b.jpg" data-lightbox="commission-1" title="Tau Manta freehand"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/f5d0bec7-6eea-49f5-9d3b-61b83e7df250_zpsb3358414.jpg" /></a></li>
+			</ul>
 		</div>
 	</div>
 
 	<div class="modelSet">
 		<p><h3>My Models</h3></p>
 		<p>This is a list of my previous work in model painting and assembly. These include contest winners and other pieces I am proud of.</p>
-		<img id="bigOne" src="http://placehold.it/300x300" />
-		<div class="projectDescription">
-			<p>something or rather but it is some kind of project I id some time ago in a galaxy far far away under a kitchen sink. Therefore aliens cat and django.</p>
-		</div>
 		<div class="others">
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
+			<ul id="gallery">
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1840015_zps8c9e556f.jpg" data-lightbox="model-1" title="Deathwing Terminators"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/798e1f68-44e4-4ac6-87ca-a3efaaa1cff5_zps8ff7b8bf.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1820011_zps916f961c.jpg" data-lightbox="model-1"title="Masterclass Ogre"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/e09ccb68-cdd4-429b-87db-626357f7549e_zps3245f3f8.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1820010_zps3abc16b7.jpg" data-lightbox="model-1"title="Masterclass Ogre"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/7d5e06ec-d00d-4bfa-921b-00bff47b9f4e_zps702d0ae5.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1800001_zpsdae57ff1.jpg" data-lightbox="model-1"title="Cygnar Stormblades squad"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/9363967f-c737-4864-a891-000b26de7b0f_zps8b3755c0.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/S1800002_zpsb7a4af2e.jpg" data-lightbox="model-1"title="Cygnar Stormblade"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/3dcaf74a-4a12-4d35-b460-d134dc530504_zps7cc14a6c.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/DSCF0726_zpsf2c631d2.jpg" data-lightbox="model-1"title="Empire Engineer on mechanical steed"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/a60391a5-84a3-4233-bb6a-680fb8e55bc1_zps4f18d9da.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_P9260019_zpsea3c2d4c.jpg" data-lightbox="model-1"title="The Throne of Judgement"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/eb8fe25d-e756-4a71-953c-7d85a13b9b60_zpsdbfb29d0.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_P9260021_zpsf90e8a02.jpg" data-lightbox="model-1"title="Parchment freehand"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/c7d75c77-fd00-4a1c-9505-3e025a4b57af_zpscaa6a73c.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_P9260024_zps7d7bee21.jpg" data-lightbox="model-1"title="Inquisitor Lord Karamazov"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/66e128c1-2954-452b-8ce7-beed89706298_zpse2a3bacf.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_P9280019_zpsee624281.jpg" data-lightbox="model-1"title="Tau Battlesuits with water effect shield generators"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/aa26941a-ad07-4b5b-a11c-01941d9527f4_zps9918d4fc.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_PA090070_zps9f99f8fd.jpg" data-lightbox="model-1"title="Harbinger of Menoth"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/a434fd7a-0bd4-4499-9d48-84fe057d45cd_zps1dc17df3.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_PA090073_zps14122e5f.jpg" data-lightbox="model-1"title="Harbinger attendees"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/33dc876c-0f44-4267-8884-d8258edbbe20_zpsb7b71314.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_PA160088_zpsb20a6b5d.jpg" data-lightbox="model-1"title="Chief Librarian Tigurius"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/5f1f042c-d0cc-4cde-a7cb-1d96648f5aaa_zps7c3d6062.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_PA160090_zps6318917e.jpg" data-lightbox="model-1"title="Chief Librarian Tigurius"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/2dbf390b-cca4-4cae-836f-013897a9f27f_zps8b0c2580.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_PA160091_zpsb6599dcc.jpg" data-lightbox="model-1"title="cape"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/76392a9a-984a-4127-9f1d-3cc159a8fc53_zps88839c4a.jpg" /></a></li>
+				<li><a href="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/lg_PB250110_zps75003e38.jpg" data-lightbox="model-1"title="Black Templar Emperor's Champion"><img src="http://i458.photobucket.com/albums/qq302/ccGuardftw/sg%20album/thumbnails/39bf83c5-4a03-48fd-b297-6707b2444513_zpsdff90149.jpg" /></a></li>
+			</ul>
 		</div>
 	</div>
 
 	<div class="mediaSet">
 		<p><h3>Tutorials</h3></p>
-		<p>This is a list of tutorial videos that I have made on some painting and assembly techniques. A general grasp on basic techniques is required as I focus more on advanced painting techniques. All of these can be found on Youtube on my channel</p>
-		<img id="bigOne" src="http://placehold.it/300x300" />
+		<p>This is a list of tutorial videos that I have made on some painting and assembly techniques. A general grasp on basic techniques is required as I focus more on advanced painting techniques. All of these can be found on Youtube on my channel. These thumbnails will open a tab to the video's Youtube page.</p>
 		<div class="others">
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
-			<img src="http://placehold.it/100x100" />
+			<a href="http://www.youtube.com/watch?v=Vs7LUVslQOs" title="Painting a Lychguard without metallic paints part 1" target="_blank"><img src="images/lych1.png" /></a>
+			<a href="http://www.youtube.com/watch?v=c8OMQwCPWXI" title="Painting a Lychguard without metallic paints part 2" target="_blank"><img src="images/lych2.png" /></a>
+			<a href="http://www.youtube.com/watch?v=aDlZSo72Sq4" title="Assembly line painting Middenheim riflemen" target="_blank"><img src="images/riflemen.png" /></a>
+			<a href="http://www.youtube.com/watch?v=1pKfA9OY8g8" title="Magnetizing a Necron Doomsday/Ghost Ark" target="_blank"><img src="images/buildark.png" /></a>
+			<a href="http://www.youtube.com/watch?v=sI8doQyS-Us" title="Painting Kallus, Wrath of Everblight" target="_blank"><img src="images/kallus.png" /></a>
+			<a href="http://www.youtube.com/watch?v=aNRpmxYt5lE" title="Painting Dark Eldar Kabalite Warrior Sybarite" target="_blank"><img src="images/sybarite.png" /></a>
+			<a href="http://www.youtube.com/watch?v=TfcNfWV7RIs" title="Assembling Beyond the Wall" target="_blank"><img src="images/assembleBtW.png" /></a>
+			<a href="http://www.youtube.com/watch?v=46C3DsvEyzg" title="Painting Beyond the Wall Part 1" target="_blank"><img src="images/paintingBtW1.png" /></a>
+			<a href="http://www.youtube.com/watch?v=mf6ozHC36xo" title="Painting Beyonf the Wall Part 2" target="_blank"><img src="images/paintingBtW2.png" /></a>
 		</div>
 	</div>
 
