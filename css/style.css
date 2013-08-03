@@ -1,3 +1,10 @@
+/*
+Credit the lightbox code to Lokesh Dhakar on
+http://lokeshdhakar.com/projects/lightbox2/
+*/
+
+
+
 html {
 	background-color: #2B2B2B;
 	overflow-x: hidden;
@@ -44,6 +51,8 @@ h3 {
 	line-height: 1px;
 	padding-bottom: 8px;
 }
+
+/*=========Header==========*/
 
 .slogan {
 	position: relative;
@@ -108,6 +117,8 @@ nav li {
 	padding-right: 30px;
 }
 
+/*========================*/
+
 label {
 	display: block;
 	margin-top: 15px;
@@ -130,54 +141,6 @@ input {
     -webkit-border-radius:5px;
 }
 
-/*================GALLERY==================*/
-
-/*--Main Container--*/
-.main_view {
- float: left;
- position: relative;
-}
-/*--Window/Masking Styles--*/
-.window {
- height:286px; width: 790px;
- overflow: hidden; /*--Hides anything outside of the set width/height--*/
- position: relative;
-}
-.image_reel {
- position: absolute;
- top: 0; left: 0;
-}
-.image_reel img {float: left;}
- 
-/*--Paging Styles--*/
-.paging {
- position: absolute;
- bottom: 40px; right: -7px;
- width: 178px; height:47px;
- z-index: 100; /*--Assures the paging stays on the top layer--*/
- text-align: center;
- line-height: 40px;
- background: url(paging_bg2.png) no-repeat;
- display: none; /*--Hidden by default, will be later shown with jQuery--*/
-}
-.paging a {
- padding: 5px;
- text-decoration: none;
- color: #fff;
-}
-.paging a.active {
- font-weight: bold;
- background: #920000;
- border: 1px solid #610000;
- -moz-border-radius: 3px;
- -khtml-border-radius: 3px;
- -webkit-border-radius: 3px;
-}
-.paging a:hover {font-weight: bold;}
-
-
-/*==============GALLERY===============*/
-
 a:link {
 	text-decoration: none;
 	color: #E6E6E6;
@@ -198,7 +161,9 @@ a:hover {
 	color: #000;
 }
 
-#bigNav {
+/*==========ids============*/
+
+#bigNav { /*-------header nav bar-------*/
 	position: relative;
 	left: 30px;
 	font-family: Futura, sans-serif;
@@ -208,26 +173,26 @@ a:hover {
 	display: inline-block;
 }
 
-#leftNav {
+#leftNav { /*-------header nav bar-------*/
 	position: relative;
 }
 
-#rightNav {
+#rightNav { /*-------header nav bar-------*/
 	position: relative;
 	top: -20px;
 	left: 650px;
 	display: inline-block;
 }
 
+#fit { /*-------squiggly size modifier-------*/
+	width: 140%;
+	height: 100px;
+}
+
 #portrait {
 	position: relative;
 	top: 220px;
 	left: -850px;
-}
-
-#fit {
-	width: 140%;
-	height: 100px;
 }
 
 #years9 {
@@ -268,6 +233,10 @@ a:hover {
 	border-color: #CCC;
 	opacity: 1;
 }
+
+/*==========ids============*/
+
+/*==========classes============*/
 
 .channel {
 	text-align: center;
@@ -353,37 +322,42 @@ a:hover {
 	display: inline-block;
 }
 
-.aboutActive {
+.aboutActive { /*-------squiggly moves to the nav bar word on the respective page-------*/
 	position: absolute;
 	top: 125px;
 	left: 200px;
 }
 
-.homeActive {
+.homeActive { /*-------squiggly moves to the nav bar word on the respective page-------*/
+	position: absolute;
 	position: absolute;
 	top: 125px;
 	left: 65px;
 }
 
-.blogActive {
+.blogActive { /*-------squiggly moves to the nav bar word on the respective page-------*/
+	position: absolute;
 	position: absolute;
 	top: 125px;
 	left: 365px;
 }
 
-.contactActive {
+.contactActive { /*-------squiggly moves to the nav bar word on the respective page-------*/
+	position: absolute;
 	position: absolute;
 	top: 125px;
 	left: 1075px;
 }
 
-.galleryActive {
+.galleryActive { /*-------squiggly moves to the nav bar word on the respective page-------*/
+	position: absolute;
 	position: absolute;
 	top: 125px;
 	left: 720px;
 }
 
-.commissionActive {
+.commissionActive { /*-------squiggly moves to the nav bar word on the respective page-------*/
+	position: absolute;
 	position: absolute;
 	top: 125px;
 	left: 870px;
@@ -442,7 +416,8 @@ a:hover {
 	display: inline-block;
 }
 
-.commissionSet {
+.commissionSet { /*-------gallery set using lightbox-------*/
+	position: absolute;
 	left: 225px;
 	width: 820px;
 	position: relative;
@@ -450,7 +425,7 @@ a:hover {
 	display: block;
 }
 
-.modelSet {
+.modelSet { /*-------gallery set using lightbox-------*/
 	left: 225px;
 	width: 820px;
 	position: relative;
@@ -458,7 +433,7 @@ a:hover {
 	display: block;
 }
 
-.mediaSet {
+.mediaSet { /*-------gallery set using lightbox-------*/
 	left: 225px;
 	width: 820px;
 	position: relative;
@@ -477,11 +452,6 @@ a:hover {
 .others {
 	display: block;
 	width: 920px;
-}
-
-.projectDescription {
-	width: 500px;
-	display: inline-block;
 }
 
 .commissionInfo {
@@ -535,3 +505,5 @@ a:hover {
 	width: 240px;
 	height: 170px;
 }
+
+/*==========classes============*/
