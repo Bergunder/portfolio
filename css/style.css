@@ -269,6 +269,11 @@ a:hover {
 	opacity: 1;
 }
 
+.channel {
+	text-align: center;
+	padding-top: 50px;
+}
+
 .pageHeader {
 	position: relative;
 	text-align: center;
@@ -431,7 +436,7 @@ a:hover {
 
 .years4Write {
 	position: relative;
-	top: 163px;
+	top: 217px;
 	left: -5px;
 	width: 300px;
 	display: inline-block;
@@ -507,6 +512,7 @@ a:hover {
 	border-bottom: none;
 	margin-top: 50px;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .terms {
@@ -522,4 +528,10 @@ a:hover {
 	position: relative;
 	left: 140px;
 	padding: 100px;
+}
+
+.sample {
+	float: right;
+	width: 240px;
+	height: 170px;
 }
